@@ -8,7 +8,7 @@
         <RouterLink to="/contact" class="mr-4 hover:underline md:mr-6">Nous Contacter</RouterLink>
       </li>
       <li>
-        <RouterLink to="/contact" class="mr-4 hover:underline md:mr-6">Politique de confidentialité</RouterLink>
+        <RouterLink to="/legal" class="mr-4 hover:underline md:mr-6">Politique de confidentialité</RouterLink>
       </li>
     </ul>
   </footer>
