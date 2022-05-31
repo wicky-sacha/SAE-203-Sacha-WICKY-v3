@@ -13,7 +13,6 @@
             cursor-pointer
             focus:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2
           "
-          ref="prev"
         >
           <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -101,7 +100,6 @@
           @click="goNext"
           aria-label="slide forward"
           class="absolute right-0 z-30 mr-10 focus:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
-          ref="next"
         >
           <svg class="dark:text-white" width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -121,16 +119,20 @@ export default {
   },
   methods: {
     goNext() {
-      this.defaultTransform = defaultTransform - 398;
+      console.log("ici dans next");
+      // debugger;
+      this.defaultTransform = this.defaultTransform - 398;
       //var slider = document.getElementById("slider");
-      if (Math.abs(defaultTransform) >= slider.scrollWidth / 1.7) defaultTransform = 0;
-      slider.style.transform = "translateX(" + defaultTransform + "px)";
+      const slider = this.$refs.slider;
+      if (Math.abs(this.defaultTransform) >= slider.scrollWidth / 1.7) this.defaultTransform = 0;
+      slider.style.transform = "translateX(" + this.defaultTransform + "px)";
     },
     goPrev() {
       //var slider = document.getElementById("slider");
-      if (Math.abs(defaultTransform) === 0) defaultTransform = 0;
-      else this.defaultTransform = defaultTransform + 398;
-      slider.style.transform = "translateX(" + defaultTransform + "px)";
+      const slider = this.$refs.slider;
+      if (Math.abs(this.defaultTransform) === 0) this.defaultTransform = 0;
+      else this.this.defaultTransform = this.defaultTransform + 398;
+      slider.style.transform = "translateX(" + this.defaultTransform + "px)";
     },
   },
 };

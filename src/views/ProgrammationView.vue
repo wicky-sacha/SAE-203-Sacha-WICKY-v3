@@ -2,7 +2,7 @@
   <main class="w-fullh-full bg-cover bg-left bg-no-repeat" :style="`background-image: url('${fondImage}')`">
     <Navi />
     <BandeauProg />
-    <div class="grid auto-rows-[40rem] grid-cols-3 content-center items-center">
+    <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center">
       <card nom="KANYE WEST" :image="imageKanye" date="Mardi 12 juillet 2022" scene="Grande Scène" />
       <card nom="TOM YORKE" :image="imageTom" date="Mercredi 13 juillet 2022" scene="La Plage" />
       <card nom="TOM YORKE" :image="imageFrank" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
@@ -27,6 +27,16 @@
     <Bottom />
   </main>
 </template>
+
+<style scoped>
+.tri-color > *:nth-child(3n + 1) {
+  background: #000;
+}
+.tri-color > *:nth-child(3n + 2) {
+}
+.tri-color > *:nth-child(3n + 3) {
+}
+</style>
 
 <script>
 import Navi from "../components/Navi.vue";
