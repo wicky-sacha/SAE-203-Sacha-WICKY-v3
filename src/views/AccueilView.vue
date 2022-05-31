@@ -1,5 +1,5 @@
 <template>
-  <main class="w-fullh-full bg-cover bg-left bg-no-repeat" style="background-image: url('../assets/fond.png')">
+  <main class="w-fullh-full bg-cover bg-left bg-no-repeat" style="background-image: url('src/assets/fond.png')">
     <Navi />
     <Affiche />
     <Caroussel />
