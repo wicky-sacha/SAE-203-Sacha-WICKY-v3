@@ -1,6 +1,4 @@
 <template>
-  <img src="../assets/programmation.png" alt="bandeau programmation" />
-
   <div class="flex content-center p-20">
     <div class="max-w-sm rounded-lg bg-white shadow-lg">
       <RouterLink to="/artist">
