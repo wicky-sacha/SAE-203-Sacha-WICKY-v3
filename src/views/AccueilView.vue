@@ -1,5 +1,5 @@
 <template>
-  <main class="w-fullh-full bg-cover bg-left bg-no-repeat" style="background-image: url('src/assets/fond.png')">
+  <main class="w-fullh-full bg-cover bg-left bg-no-repeat" :style="`background-image: url('${fondImage}')`">
     <Navi />
     <Affiche />
     <Caroussel />
@@ -16,7 +16,14 @@ import Affiche from "../components/Affiche.vue";
 import Caroussel from "../components/Caroussel.vue";
 import Video from "../components/Video.vue";
 import CardBloc from "../components/CardBloc.vue";
+import fondImage from "../assets/fond.png?url";
 export default {
+  data: function () {
+    return {
+      fondImage,
+    };
+  },
+
   components: { Navi, Bottom, Affiche, Caroussel, Video, CardBloc },
 };
 </script>
