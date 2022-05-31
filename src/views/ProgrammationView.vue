@@ -30,11 +30,13 @@
 
 <style scoped>
 .tri-color > *:nth-child(3n + 1) {
-  background: #000;
+  background: #db2777;
 }
 .tri-color > *:nth-child(3n + 2) {
+  background: #4ade80;
 }
 .tri-color > *:nth-child(3n + 3) {
+  background: #fde047;
 }
 </style>
 
