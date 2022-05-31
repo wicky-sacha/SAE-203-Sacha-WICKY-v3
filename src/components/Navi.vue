@@ -1,7 +1,7 @@
 <template>
   <nav class="flex flex-wrap items-center justify-between bg-gray-100 p-6">
     <div class="mr-6 flex flex-shrink-0 items-center text-gray-700">
-      <RouterLink to=".././views/AccueilView.vue"><img class="w-20" src=".././assets/logo.png" alt="Logo PNG" /></RouterLink>
+      <RouterLink to="../views/AccueilView.vue"><img class="w-20" src=".././assets/logo.png" alt="Logo PNG" /></RouterLink>
     </div>
     <div class="block lg:hidden">
       <button class="flex items-center rounded border border-gray-100 px-3 py-2 text-black hover:border-black hover:text-black">
