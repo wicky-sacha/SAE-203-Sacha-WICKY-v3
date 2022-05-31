@@ -1,6 +1,6 @@
 <template>
   <div class="md:w-100 mx-auto w-auto p-20 md:max-w-full">
-    <div class="border border-gray-300 bg-blue-400 p-6 sm:rounded-md">
+    <div class="border border-gray-300 bg-gray-100 p-6 sm:rounded-md">
       <form method="POST" action="https://herotofu.com/start" class="">
         <label class="mb-6 block">
           <span class="text-gray-700">Prénom Nom</span>
