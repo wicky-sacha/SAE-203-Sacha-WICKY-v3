@@ -8,7 +8,7 @@
       Département MMI Montbéliard - 4 Place Tharradin 25200 Montbéliard <br />
       <br />
       Mail ou numéro de téléphone pour contacter votre entreprise. <br />
-      Adresse e-mail du site : lesttroiscirques@reunion.fr <br />
+      Adresse e-mail du site : lest-trois-cirques@reunion.fr <br />
       Adresse e-mail de Sacha WICKY : sacha.wicky@edu.univ-fcomte.fr <br />
       Adresse e-mail de l’entreprise : dut-mmi-montbeliard@univ-fcomte.fr <br />
       Numéro de l’entreprise : +33 (0)3 81 99 47 34 <br />
