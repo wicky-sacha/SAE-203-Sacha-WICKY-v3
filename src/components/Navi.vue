@@ -13,9 +13,15 @@
     </div>
     <div class="block w-full flex-grow lg:flex lg:w-auto lg:items-center">
       <div class="text-sm lg:flex-grow">
-        <a href="./programmation.html" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block"> PROGRAMMATION </a>
-        <a href="./billeterie.html" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block"> BILLETTERIE </a>
-        <a href="./les-trois-cirques.html" class="mt-4 block text-black hover:text-black lg:mt-0 lg:inline-block"> LES TROIS CIRQUES </a>
+        <RouterLink to="../views/ProgrammationView.vue" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block"
+          >PROGRAMMATION</RouterLink
+        >
+        <RouterLink to="../views/BilletterieView.vue" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block"
+          >BILLETTERIE</RouterLink
+        >
+        <RouterLink to="../views/AboutView.vue" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block"
+          >LES TROIS CIRQUES</RouterLink
+        >
       </div>
     </div>
   </nav>
