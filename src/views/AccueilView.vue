@@ -1,9 +1,12 @@
 <template>
   <main>
-    <h1 class="text-2xl">Bonjour</h1>
+    <Navi />
   </main>
 </template>
 
 <script>
-export default {};
+import Navi from "../components/Navi.vue";
+export default {
+  components: { Navi },
+};
 </script>
