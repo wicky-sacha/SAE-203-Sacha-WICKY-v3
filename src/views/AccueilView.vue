@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Navi from "../components/Navi2.vue";
+import Navi from "../components/Navi.vue";
 import Bottom from "../components/Bottom.vue";
 import Affiche from "../components/Affiche.vue";
 import Caroussel from "../components/Caroussel.vue";
