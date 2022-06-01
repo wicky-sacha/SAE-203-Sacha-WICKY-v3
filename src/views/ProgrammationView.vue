@@ -7,25 +7,25 @@
     </div>
 
     <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center">
-      <card nom="KANYE WEST" :image="imageKanye" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="TOM YORKE" :image="imageTom" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="FRANK OCEAN" :image="imageFrank" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="KANYE WEST" :image="imageKanye" genre="Hip-Hop" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="TOM YORKE" :image="imageTom" genre="Rock" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="FRANK OCEAN" :image="imageFrank" genre="Pop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="AGAR AGAR" :image="imageAgar" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="LANA DEL REY" :image="imageLana" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="PLAYBOI CARTI" :image="imageCarti" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="AGAR AGAR" :image="imageAgar" genre="Electro" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="LANA DEL REY" :image="imageLana" genre="Pop" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="PLAYBOI CARTI" :image="imageCarti" genre="Hip-Hop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="JUSTICE" :image="imageJustice" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="TOOL" :image="imageTool" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="ARCTIC MONKEYS" :image="imageAc" pays="Angleterre" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="JUSTICE" :image="imageJustice" genre="Electro" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="TOOL" :image="imageTool" genre="Metal" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="ARCTIC MONKEYS" :image="imageAc" genre="Rock" pays="Angleterre" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="CHET FAKER" :image="imageChet" pays="Australie" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="FIONA APPLE" :image="imageFiona" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="GRIMES" :image="imageGrimes" pays="Canada" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="CHET FAKER" :image="imageChet" genre="Electro" pays="Australie" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="FIONA APPLE" :image="imageFiona" genre="Jazz" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="GRIMES" :image="imageGrimes" genre="Electro" pays="Canada" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="D'ANGELO" :image="imageAngelo" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="SADE" :image="imageSade" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="KENDRICK LAMAR" :image="imageKen" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="D'ANGELO" :image="imageAngelo" genre="Jazz" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="SADE" :image="imageSade" genre="Jazz" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="KENDRICK LAMAR" :image="imageKen" genre="Hip-Hop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
     </div>
 
     <Bottom />
