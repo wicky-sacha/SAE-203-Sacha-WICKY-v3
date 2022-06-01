@@ -7,25 +7,25 @@
     </div>
 
     <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center">
-      <card nom="KANYE WEST" :image="imageKanye" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="TOM YORKE" :image="imageTom" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="TOM YORKE" :image="imageFrank" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="KANYE WEST" :image="imageKanye" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="TOM YORKE" :image="imageTom" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="FRANK OCEAN" :image="imageFrank" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="AGAR AGAR" :image="imageAgar" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="LANA DEL REY" :image="imageLana" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="PLAYBOI CARTI" :image="imageCarti" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="AGAR AGAR" :image="imageAgar" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="LANA DEL REY" :image="imageLana" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="PLAYBOI CARTI" :image="imageCarti" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="JUSTICE" :image="imageJustice" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="TOOL" :image="imageTool" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="ARCTIC MONKEYS" :image="imageAc" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="JUSTICE" :image="imageJustice" pays="France" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="TOOL" :image="imageTool" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="ARCTIC MONKEYS" :image="imageAc" pays="Angleterre" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="CHET FAKER" :image="imageChet" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="FIONA APPLE" :image="imageFiona" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="GRIMES" :image="imageGrimes" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="CHET FAKER" :image="imageChet" pays="Australie" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="FIONA APPLE" :image="imageFiona" pays="USA" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="GRIMES" :image="imageGrimes" pays="Canada" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
 
-      <card nom="D'ANGELO" :image="imageAngelo" date="Mardi 12 juillet 2022" scene="Grande Scène" />
-      <card nom="SADE" :image="imageSade" date="Mercredi 13 juillet 2022" scene="La Plage" />
-      <card nom="KENDRICK LAMAR" :image="imageKen" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
+      <card nom="D'ANGELO" :image="imageAngelo" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
+      <card nom="SADE" :image="imageSade" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
+      <card nom="KENDRICK LAMAR" :image="imageKen" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
     </div>
 
     <Bottom />

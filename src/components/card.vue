@@ -7,6 +7,7 @@
       <RouterLink to="/artist">
         <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-black">{{ nom }}</h5>
       </RouterLink>
+      <p class="mb-3 text-center font-normal text-gray-700 dark:text-black">{{ pays }}</p>
       <p class="mb-3 text-center font-normal text-gray-700 dark:text-black">{{ date }}</p>
       <p class="mb-3 text-center font-normal text-gray-700 dark:text-black">{{ scene }}</p>
     </div>
@@ -18,6 +19,7 @@ export default {
   props: {
     image: String,
     nom: String,
+    pays: String,
     date: String,
     scene: String,
   },
