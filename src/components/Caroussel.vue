@@ -128,10 +128,10 @@ export default {
       slider.style.transform = "translateX(" + this.defaultTransform + "px)";
     },
     goPrev() {
-      //var slider = document.getElementById("slider");
+      // debugger;
       const slider = this.$refs.slider;
       if (Math.abs(this.defaultTransform) === 0) this.defaultTransform = 0;
-      else this.this.defaultTransform = this.defaultTransform + 398;
+      else this.defaultTransform = this.defaultTransform + 398;
       slider.style.transform = "translateX(" + this.defaultTransform + "px)";
     },
   },
