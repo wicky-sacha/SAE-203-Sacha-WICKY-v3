@@ -28,6 +28,7 @@
           <RouterLink to="/billetterie" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block">BILLETTERIE</RouterLink>
           <RouterLink to="/about" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block">LES TROIS CIRQUES</RouterLink>
           <RouterLink to="/contact" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block">CONTACT</RouterLink>
+          <RouterLink to="/connexion" class="mt-4 mr-4 block text-black hover:text-black lg:mt-0 lg:inline-block">CONNEXION</RouterLink>
         </ul>
       </nav>
     </div>
