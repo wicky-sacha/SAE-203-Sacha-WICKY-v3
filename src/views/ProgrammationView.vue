@@ -2,6 +2,10 @@
   <main class="w-fullh-full bg-cover bg-left bg-no-repeat" :style="`background-image: url('${fondImage}')`">
     <Navi />
     <BandeauProg />
+    <div class="p flex justify-end p-6 pr-20">
+      <SearchBar />
+    </div>
+
     <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center">
       <card nom="KANYE WEST" :image="imageKanye" date="Mardi 12 juillet 2022" scene="Grande Scène" />
       <card nom="TOM YORKE" :image="imageTom" date="Mercredi 13 juillet 2022" scene="La Plage" />
@@ -45,6 +49,8 @@ import Navi from "../components/Navi.vue";
 import Bottom from "../components/Bottom.vue";
 import fondImage from "../assets/fond.png?url";
 import BandeauProg from "../components/BandeauProg.vue";
+import SearchBar from "../components/SearchBar.vue";
+
 import card from "../components/card.vue";
 import imageKanye from "../assets/artistes/kanye.png?url";
 import imageTom from "../assets/artistes/tom.png?url";
@@ -84,6 +90,6 @@ export default {
     };
   },
 
-  components: { Navi, Bottom, BandeauProg, card },
+  components: { Navi, Bottom, BandeauProg, card, SearchBar },
 };
 </script>

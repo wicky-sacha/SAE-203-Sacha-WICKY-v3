@@ -1,54 +1,116 @@
 <template>
-  <div class="flex justify-center">
-    <div class="mb-3 xl:w-96">
-      <div class="input-group relative mb-4 flex w-full flex-wrap items-stretch rounded">
+  <form>
+    <div class="flex">
+      <label for="search-dropdown" class="sr-only mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Email</label>
+      <button
+        id="dropdown-button"
+        data-dropdown-toggle="dropdown"
+        class="
+          z-10
+          inline-flex
+          flex-shrink-0
+          items-center
+          rounded-l-lg
+          border border-gray-300
+          bg-gray-100
+          py-2.5
+          px-4
+          text-center text-sm
+          font-medium
+          text-gray-900
+          hover:bg-gray-200
+          focus:outline-none focus:ring-4 focus:ring-gray-100
+          dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-700
+        "
+        type="button"
+      >
+        Catégories
+        <svg class="ml-1 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div
+        id="dropdown"
+        class="z-10 hidden w-44 divide-y divide-gray-100 rounded bg-white shadow dark:bg-gray-700"
+        data-popper-reference-hidden=""
+        data-popper-escaped=""
+        data-popper-placement="top"
+        style="position: absolute; inset: auto auto 0px 0px; margin: 0px; transform: translate3d(897px, 5637px, 0px)"
+      >
+        <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdown-button">
+          <li>
+            <button type="button" class="inline-flex w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              Mockups
+            </button>
+          </li>
+          <li>
+            <button type="button" class="inline-flex w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              Templates
+            </button>
+          </li>
+          <li>
+            <button type="button" class="inline-flex w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              Design
+            </button>
+          </li>
+          <li>
+            <button type="button" class="inline-flex w-full py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+              Logos
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="relative w-full">
         <input
           type="search"
+          id="search-dropdown"
           class="
-            form-control
-            relative
-            m-0
+            z-20
             block
             w-full
-            min-w-0
-            flex-auto
-            rounded
-            border border-solid border-gray-300
-            bg-white bg-clip-padding
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            transition
-            ease-in-out
-            focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none
+            rounded-r-lg
+            border border-l-2 border-gray-300 border-l-gray-50
+            bg-gray-50
+            p-2.5
+            text-sm text-gray-900
+            focus:border-blue-500 focus:ring-blue-500
+            dark:border-gray-600
+            dark:border-l-gray-700
+            dark:bg-gray-100
+            dark:text-black
+            dark:placeholder-gray-400
+            dark:focus:border-blue-500
           "
-          placeholder="Search"
-          aria-label="Search"
-          aria-describedby="button-addon2"
+          placeholder="Artiste, Scene, Date, Pays"
+          required
         />
-        <span
-          class="input-group-text flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-700"
-          id="basic-addon2"
+        <button
+          type="submit"
+          class="
+            absolute
+            top-0
+            right-0
+            rounded-r-lg
+            border border-blue-700
+            bg-blue-400
+            p-2.5
+            text-sm
+            font-medium
+            text-white
+            hover:bg-blue-800
+            focus:outline-none focus:ring-4 focus:ring-blue-300
+            dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
+          "
         >
-          <svg
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="search"
-            class="w-4"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-          >
-            <path
-              fill="currentColor"
-              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-            ></path>
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
           </svg>
-        </span>
+        </button>
       </div>
     </div>
-  </div>
+  </form>
 </template>
