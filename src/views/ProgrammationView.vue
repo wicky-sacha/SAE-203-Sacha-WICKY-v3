@@ -27,7 +27,7 @@
       <card nom="SADE" :image="imageSade" genre="Jazz" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
       <card nom="KENDRICK LAMAR" :image="imageKen" genre="Hip-Hop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
     </div>
-
+    <Creation />
     <Bottom />
   </main>
 </template>
@@ -50,6 +50,7 @@ import Bottom from "../components/Bottom.vue";
 import fondImage from "../assets/fond.png?url";
 import BandeauProg from "../components/BandeauProg.vue";
 import SearchBar from "../components/SearchBar.vue";
+import Creation from "../components/Creation.vue";
 
 import card from "../components/card.vue";
 import imageKanye from "../assets/artistes/kanye.png?url";
@@ -90,6 +91,6 @@ export default {
     };
   },
 
-  components: { Navi, Bottom, BandeauProg, card, SearchBar },
+  components: { Navi, Bottom, BandeauProg, card, SearchBar, Creation },
 };
 </script>
