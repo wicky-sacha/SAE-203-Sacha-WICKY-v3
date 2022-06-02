@@ -1,29 +1,68 @@
 <template>
   <div>
-    <div class="title center">CONNEXION</div>
+    <div class="title center p-2">CONNEXION</div>
     <hr />
 
-    <form @submit.prevent="onCnx()">
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button class="btn btn-dark">Email :</button>
+    <div class="w-full max-w-xs">
+      <form @submit.prevent="onCnx()" class="mb-4 rounded bg-white px-8 pt-6 pb-8 shadow-md">
+        <div class="mb-4">
+          <div class="input-group-prepend">
+            <button class="mb-2 block text-sm font-bold text-gray-700" for="username">Email :</button>
+          </div>
+          <input
+            class="
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+            type="text"
+            v-model="user.email"
+            required
+          />
         </div>
-        <input class="form-control" type="text" v-model="user.email" required />
-      </div>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <button class="btn btn-dark">Mot de passe :</button>
+        <div class="input-group mb-6">
+          <div class="input-group-prepend">
+            <button class="mb-2 block text-sm font-bold text-gray-700">Mot de passe :</button>
+            <p class="text-xs italic text-red-500">Veuillez entrer votre mot de passe.</p>
+          </div>
+          <input
+            class="
+              focus:shadow-outline
+              mb-3
+              w-full
+              appearance-none
+              rounded
+              border border-red-500
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+            type="password"
+            v-model="user.password"
+            required
+          />
         </div>
-        <input class="form-control" type="password" v-model="user.password" required />
-      </div>
-      <div class="alert alert-warning mb-3 text-center" v-if="message != null">
-        {{ message }}
-      </div>
-      <div>
-        <button class="float-left" @click="onDcnx()">Deconnexion</button>
-        <button variant="dark" class="float-right" type="submit">Connexion</button>
-      </div>
-    </form>
+        <div class="alert alert-warning mb-3 text-center" v-if="message != null">
+          {{ message }}
+        </div>
+        <div>
+          <button class="float-left" @click="onDcnx()">Deconnexion</button>
+          <button variant="dark" class="float-right" type="submit">Connexion</button>
+        </div>
+      </form>
+    </div>
+
     <hr class="mb-5" style="clear: both" />
   </div>
 </template>

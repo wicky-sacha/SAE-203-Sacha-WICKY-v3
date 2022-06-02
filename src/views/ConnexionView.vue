@@ -1,7 +1,7 @@
 <template>
   <main class="w-fullh-full bg-cover bg-left bg-no-repeat" :style="`background-image: url('${fondImage}')`">
     <Navi />
-    <div class="flex justify-center p-32"><Connexion /></div>
+    <div class="flex justify-center p-2 pb-48"><Connexion /></div>
     <Bottom />
   </main>
 </template>
