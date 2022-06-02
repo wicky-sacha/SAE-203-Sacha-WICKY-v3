@@ -27,7 +27,9 @@
       <card nom="SADE" :image="imageSade" genre="Jazz" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
       <card nom="KENDRICK LAMAR" :image="imageKen" genre="Hip-Hop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />
     </div>
-    <Creation />
+    <div class="flex justify-center pb-20">
+      <Creation />
+    </div>
     <Bottom />
   </main>
 </template>

@@ -10,7 +10,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Nom</span>
           </div>
-          <input type="text" v-model="titre" class="form-control" placeholder="Nom de l'artiste" />
+          <input type="text" v-model="nom" class="form-control" placeholder="Nom de l'artiste" />
         </div>
         <br />
 
@@ -67,7 +67,10 @@
       <ol>
         <h4>Liste des artistes saisis :</h4>
         <li v-for="artist in liste" :key="artist.id">
-          id: {{ artist.id }} - Nom : {{ artist.nom }} - Genre : {{ artist.genre }} - Pays : {{ artist.pays }} - Date : {{ artist.date }} -
+          Nom : {{ artist.nom }}<br />
+          Genre : {{ artist.genre }} <br />
+          Pays : {{ artist.pays }} <br />
+          Date : {{ artist.date }} <br />
           Scene :
           {{ artist.scene }}
         </li>
@@ -83,9 +86,9 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase
 export default {
   data() {
     return {
-      // Liste à remplir de films
+      // Liste à remplir d'artistes
       liste: [],
-      // Définition d'un film
+      // Définition d'un artiste
       id: 0,
       nom: "",
       pays: "",
@@ -103,7 +106,7 @@ export default {
   methods: {
     saisie: function () {
       // Initialisation de l'artiste à mettre dans le tableau
-      let artiste = {
+      let artist = {
         id: 0,
         nom: "",
         genre: "",
