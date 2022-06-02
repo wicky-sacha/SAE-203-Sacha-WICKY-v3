@@ -2,7 +2,7 @@
   <main class="w-fullh-full bg-cover bg-left bg-no-repeat" :style="`background-image: url('${fondImage}')`">
     <Navi />
     <BandeauProg />
-    <div class="p flex justify-end p-6 pr-20">
+    <div class="flex justify-end p-6">
       <SearchBar />
     </div>
 
