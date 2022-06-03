@@ -16,7 +16,7 @@
         propres compositions. Véritable touche-à-tout, il étend plus tard ses influences à différents styles musicaux comme le RnB, la pop
         baroque, le trip hop, le rock alternatif, la folk, l'electronica, la musique industrielle, ou encore la musique classique.
       </p>
-      <div class="flex w-16 justify-between gap-4 pt-3">
+      <div class="grid grid-cols-4 justify-between gap-4 pt-3">
         <img src="../assets/album1.png" alt="album 1" />
         <img src="../assets/album2.png" alt="album 2" />
         <img src="../assets/album3.png" alt="album 3" />
