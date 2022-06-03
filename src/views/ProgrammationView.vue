@@ -6,7 +6,7 @@
       <SearchBar />
     </div>
 
-    <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center">
+    <div class="tri-color grid auto-rows-[40rem] grid-cols-3 content-center items-center p-20">
       <card nom="KANYE WEST" :image="imageKanye" genre="Hip-Hop" pays="USA" date="Mardi 12 juillet 2022" scene="Grande Scène" />
       <card nom="TOM YORKE" :image="imageTom" genre="Rock" pays="Angleterre" date="Mercredi 13 juillet 2022" scene="La Plage" />
       <card nom="FRANK OCEAN" :image="imageFrank" genre="Pop" pays="USA" date="Jeudi 14 juillet 2022" scene="Le Chapiteau" />

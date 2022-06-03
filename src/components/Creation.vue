@@ -1,16 +1,33 @@
 <template>
   <div>
-    <div class="title center">Saisie d'un artiste</div>
+    <h2 class="title center text-blaxk text-3xl font-semibold">Saisie d'un artiste</h2>
     <hr />
     <div class="row">
-      <h4>Saisie :</h4>
       <br />
       <form @submit.prevent="saisie" class="container">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text">Nom</span>
           </div>
-          <input type="text" v-model="nom" class="form-control" placeholder="Nom de l'artiste" />
+          <input
+            type="text"
+            v-model="nom"
+            class="
+              form-control
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+            placeholder="Nom de l'artiste"
+          />
         </div>
         <br />
 
@@ -18,7 +35,22 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Genre</span>
           </div>
-          <select v-model="genre">
+          <select
+            v-model="genre"
+            class="
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+          >
             <option value="" disabled selected>Sélectionner un genre</option>
             <option v-for="genre in listeGenre" :key="genre">{{ genre }}</option>
           </select>
@@ -29,7 +61,22 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Pays</span>
           </div>
-          <select v-model="pays">
+          <select
+            v-model="pays"
+            class="
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+          >
             <option value="" disabled selected>Sélectionner un pays</option>
             <option v-for="pays in listePays" :key="pays">{{ pays }}</option>
           </select>
@@ -40,7 +87,22 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Date</span>
           </div>
-          <select v-model="date">
+          <select
+            v-model="date"
+            class="
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+          >
             <option value="" disabled selected>Sélectionner une date</option>
             <option v-for="date in listeDate" :key="date">{{ date }}</option>
           </select>
@@ -51,21 +113,36 @@
           <div class="input-group-prepend">
             <span class="input-group-text">Scene</span>
           </div>
-          <select v-model="scene">
+          <select
+            v-model="scene"
+            class="
+              focus:shadow-outline
+              w-full
+              appearance-none
+              rounded
+              border
+              py-2
+              px-3
+              leading-tight
+              text-gray-700
+              shadow
+              focus:outline-none
+            "
+          >
             <option value="" disabled selected>Sélectionner une scene</option>
             <option v-for="scene in listeScene" :key="scene">{{ scene }}</option>
           </select>
         </div>
         <br />
 
-        <input type="submit" value="Valider" />
+        <input type="submit" value="Valider" class="p-2 text-2xl" />
       </form>
     </div>
     <hr />
 
     <div class="row">
       <ol>
-        <h4>Liste des artistes saisis :</h4>
+        <h2 class="title center text-blaxk text-3xl font-semibold">Liste des artistes saisis :</h2>
         <li v-for="artist in liste" :key="artist.id">
           Nom : {{ artist.nom }}<br />
           Genre : {{ artist.genre }} <br />
@@ -129,21 +206,6 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.center {
-  text-align: center;
-}
-.title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-  color: #34495e;
-}
-h4 {
-  font-weight: bold;
-}
-</style>
 
 
 

@@ -3,7 +3,7 @@
     <Navi />
     <Affiche class="grid auto-rows-[40rem] grid-cols-2 content-center justify-items-center" />
     <Caroussel />
-    <Video class="mx-auto flex w-full flex-col items-center" />
+    <Video class="mx-auto flex max-w-7xl flex-col items-center" />
     <CardBloc class="grid auto-rows-[40rem] grid-cols-2 content-center justify-items-center" />
     <Bottom />
   </main>
